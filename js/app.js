@@ -5,7 +5,7 @@ function goBack() {
 // array for background images
 
 const backgroundImages = ['https://cdn.glitch.com/96478797-c429-47dc-a2a6-e886b050e1e8%2F49247335772_7b750af39e_k.jpg?v=1577551353699', 'timothy-oldfield-luufnHoChRU-unsplash.jpg'];
-const counter = 0;
+let counter = 0;
 
 // set background image
 
