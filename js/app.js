@@ -11,10 +11,11 @@ let counter = 0;
 
 (function setBackground() {
 
+    counter = 1;
     console.log('this runs');
     const background = document.createElement("a-sky");
     background.setAttribute("id", "sky"); 
-    background.setAttribute("src", "#sky");  
+    background.setAttribute("src", backgroundImages[0]);  
 
     const scene = document.getElementById('scene');
     scene.appendChild(background);
