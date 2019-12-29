@@ -7,10 +7,11 @@
     background: rgba(0,0,0,0.7);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    padding: 20px 20px;
+    padding: 10px 20px;
     border-radius: 10px;
     color: #fff;
     z-index: 999;
+    font-weight: 700;
 
 }
 
@@ -32,7 +33,14 @@
 
 }
 
-.bottomControls .previous img, .bottomControls .previous img {
+.bottomControls .currentScene {
+
+    display: block;    
+    margin: 0 auto;
+
+}
+
+.bottomControls .previous img, .bottomControls .next img {
 
     display: block;
     width: 22px;
