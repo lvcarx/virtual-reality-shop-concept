@@ -25,6 +25,7 @@
     backdrop-filter: saturate(180%) blur(20px);
     padding: 8px;
     border-radius: 10px;
+    border: none;
     z-index: 999;
     color: #fff;
     background-size: cover;
