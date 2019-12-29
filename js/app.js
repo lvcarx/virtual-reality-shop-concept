@@ -9,6 +9,9 @@ function goBack() {
     console.log('this runs');
     const background = document.createElement("a-sky");
     background.setAttribute("src", "#sky");  
+
+    const scene = document.getElementById('scene');
+    scene.appendChild(background);
    
 })();
 
