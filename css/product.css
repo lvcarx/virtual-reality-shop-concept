@@ -1,0 +1,51 @@
+.content {
+
+    overflow: auto;
+    padding: 50px 0;
+
+}
+
+.leftSide {
+
+    width: 40%;
+    float: left;
+
+}
+
+.leftSide a {
+
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: underline;
+    transition: all 0.2 ease;
+
+}
+
+.leftSide a:hover {
+
+    color: rgb(40, 0, 170);
+
+}
+
+.rightSide {
+
+    width: 60%;
+    float: left;
+    padding-left: 40px;
+
+}
+
+.rightSide p {
+
+    line-height: 180%;
+    width: 75%;
+
+}
+
+.rightSide .filledButton {
+
+    display: inline-block;
+    margin-top: 20px;
+
+}

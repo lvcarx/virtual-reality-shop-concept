@@ -10,6 +10,8 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    min-height: 100vh;
+    position: relative;
 
 }
 
@@ -26,10 +28,40 @@ a {
 
 }
 
+ul {
+
+    list-style: none;
+
+}
+
 header {
 
     background: #f2f2f2;
-    padding: 9px 10px;
+    padding: 9px 13px;
+    overflow: auto;
+
+}
+
+header a {
+
+    color: #333333;
+
+}
+
+header a.logo {
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    display: block;
+    float: left;
+    font-size: 19px;
+    font-weight: 600;
+
+}
+
+header ul {
+
+    float: right;
 
 }
 
@@ -42,19 +74,21 @@ body .content {
 
 }
 
-body .product img {
-
-    width: 300px;
-    display: inline-block;
-
-}
-
 body .emptyButton {
 
     border: 2px solid #3D00FF;
     color: #3D00FF;
-    padding: 10px 25px;
+    padding: 10px 35px;
     display: inline-block;
+    transition: all 0.2s ease;
+
+}
+
+body .emptyButton:hover {
+
+    border: 2px solid #3D00FF;
+    background: #3D00FF;
+    color: #fff;
 
 }
 
@@ -62,12 +96,25 @@ body .filledButton {
 
     background: #3D00FF;
     color: #fff;
+    padding: 10px 35px;
+    transition: all 0.2s ease;
+
+}
+
+body .filledButton:hover {
+
+    background: rgb(40, 0, 170);
 
 }
 
 footer {
 
     background: #f2f2f2;
-    padding: 6px 10px;
+    padding: 8px 13px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
 }

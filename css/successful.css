@@ -1,0 +1,20 @@
+.content {
+
+    text-align: center;
+
+}
+
+.content p {
+
+    width: 60%;
+    margin: 0 auto;
+    line-height: 180%;
+
+}
+
+.content a {
+
+    display: inline-block;
+    margin-top: 30px;
+
+}
