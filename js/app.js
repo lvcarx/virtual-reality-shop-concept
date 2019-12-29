@@ -22,6 +22,7 @@ previousBtn.addEventListener('click', changePreviousBackground, false);
 
 function changePreviousBackground() {
 
+    console.log('previous bg');
     background.setAttribute("src", "#sky2");  
 
 }
@@ -33,6 +34,7 @@ nextBtn.addEventListener('click', changeNextBackground, false);
 
 function changeNextBackground() {
 
+    console.log('next bg');
     background.setAttribute("src", "#sky");  
 
 }
