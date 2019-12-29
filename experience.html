@@ -20,7 +20,6 @@
       </a-assets>
 
       <a-sky src="#sky"></a-sky>
-      <a-sky src="#sky2"></a-sky>
       
       <a-text value="Hello A-Frame!" position="0 100 0" width="6" color="black"></a-text>
       
@@ -32,9 +31,9 @@
       <button class="closeBtn close button" onclick="goBack()"><img src="img/close.svg"></button>
       
       <div class="bottomControls">
-        <button class="previous button"><img src="img/previous.svg"></button>
+        <button class="previous button" id="previousBtn"><img src="img/previous.svg"></button>
         <span class="currentScene">Current Scene</span>
-        <button class="next button"><img src="img/next.svg"></button>
+        <button class="next button" id="nextBtn"><img src="img/next.svg"></button>
       </div>
 
     </a-scene>
