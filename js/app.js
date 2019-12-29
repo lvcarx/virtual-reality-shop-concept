@@ -4,7 +4,7 @@ function goBack() {
 
 // array for background images
 
-var backgroundImages = ['https://cdn.glitch.com/96478797-c429-47dc-a2a6-e886b050e1e8%2F49247335772_7b750af39e_k.jpg?v=1577551353699', 'img\timothy-oldfield-luufnHoChRU-unsplash.jpg'];
+var backgroundImages = ['https://cdn.glitch.com/96478797-c429-47dc-a2a6-e886b050e1e8%2F49247335772_7b750af39e_k.jpg?v=1577551353699', 'timothy-oldfield-luufnHoChRU-unsplash.jpg'];
 
 // set background image
 
