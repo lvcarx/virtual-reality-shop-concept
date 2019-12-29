@@ -29,9 +29,9 @@ function changePreviousBackground() {
 
     const background2 = document.createElement("a-sky");
     background2.setAttribute("id", "sky2"); 
-    background2.setAttribute("src", "backgroundImages[1]");  
+    background2.setAttribute("src", backgroundImages[1]);  
 
-    console.log('previous bg2');
+    console.log('previous bg3');
     const scene = document.getElementById('scene');
     scene.appendChild(background2);
 
