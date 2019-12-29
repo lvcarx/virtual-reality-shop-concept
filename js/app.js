@@ -8,6 +8,7 @@ function goBack() {
 
     console.log('this runs');
     const background = document.createElement("a-sky");
+    background.setAttribute("id", "sky"); 
     background.setAttribute("src", "#sky");  
 
     const scene = document.getElementById('scene');
@@ -22,7 +23,8 @@ previousBtn.addEventListener('click', changePreviousBackground, false);
 
 function changePreviousBackground() {
 
-    console.log('previous bg');
+    console.log('previous+ bg');
+    const background = document.getElementById('sky');
     background.setAttribute("src", "#sky2");  
 
 }
