@@ -23,6 +23,10 @@ previousBtn.addEventListener('click', changePreviousBackground, false);
 
 function changePreviousBackground() {
 
+    const background2 = document.createElement("a-sky");
+    background2.setAttribute("id", "sky2"); 
+    background2.setAttribute("src", "#sky2");  
+
     console.log('previous bg');
     const background = document.getElementById('sky');
     background.setAttribute("src", "#sky2");  
