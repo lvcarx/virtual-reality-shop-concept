@@ -37,6 +37,7 @@
 
     display: block;    
     margin: 0 auto;
+    text-align: center;
 
 }
 
@@ -51,9 +52,25 @@
 
 }
 
+.bottomControls .pevious {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
+
+}
+
 .bottomControls .next {
 
-    
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
 
 }
 
