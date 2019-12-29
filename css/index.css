@@ -32,3 +32,23 @@ body .emptyButton {
 
 }
 
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1080px) {
+
+    body .product {
+
+        width: 100%;
+        margin: 60px 0;
+        float: none;
+    
+    }
+
+    body .product img {
+
+        width: 100%;
+        max-width: 450px;
+
+    }
+
+}    
