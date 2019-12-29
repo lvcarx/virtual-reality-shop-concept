@@ -27,6 +27,10 @@ function changePreviousBackground() {
     background2.setAttribute("id", "sky2"); 
     background2.setAttribute("src", "#sky2");  
 
+    console.log('previous bg2');
+    const scene = document.getElementById('scene');
+    scene.appendChild(background2);
+
     console.log('previous bg');
     const background = document.getElementById('sky');
     background.setAttribute("src", "#sky2");  
