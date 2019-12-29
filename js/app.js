@@ -2,6 +2,10 @@ function goBack() {
     window.history.back();
 }
 
+// array for background images
+
+var backgroundImages = ['https://cdn.glitch.com/96478797-c429-47dc-a2a6-e886b050e1e8%2F49247335772_7b750af39e_k.jpg?v=1577551353699', 'img\timothy-oldfield-luufnHoChRU-unsplash.jpg'];
+
 // set background image
 
 (function setBackground() {
@@ -25,7 +29,7 @@ function changePreviousBackground() {
 
     const background2 = document.createElement("a-sky");
     background2.setAttribute("id", "sky2"); 
-    background2.setAttribute("src", "#sky2");  
+    background2.setAttribute("src", "backgroundImages[1]");  
 
     console.log('previous bg2');
     const scene = document.getElementById('scene');
