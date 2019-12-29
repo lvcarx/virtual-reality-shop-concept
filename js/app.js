@@ -2,12 +2,23 @@ function goBack() {
     window.history.back();
 }
 
-// change background image
+// change to previous background image
 
-const nextBtn = document.getElementById('previousBtn');
-nextBtn.addEventListener('click', changeBackground, false);
+const previousBtn = document.getElementById('previousBtn');
+previousBtn.addEventListener('click', changePreviousBackground, false);
 
-function changeBackground() {
+function changePreviousBackground() {
+
+    console.log('test');
+
+}
+
+// change to next background image
+
+const nextBtn = document.getElementById('nextBtn');
+nextBtn.addEventListener('click', changeNextBackground, false);
+
+function changeNextBackground() {
 
     console.log('test');
 
