@@ -41,8 +41,11 @@ function changePreviousBackground() {
         higherPreviousArrowOpacity();
 
         const allSkyElements = document.getElementsByTagName('a-sky');
-        allSkyElements.remove();
-        console.log(allSkyElements);
+
+        for (i = 0; i > allSkyElements.length; i++) {
+            allSkyElements[i].remove();
+        }
+            console.log(allSkyElements);
 
         counter -= 1;
         console.log(counter);
@@ -76,7 +79,9 @@ function changeNextBackground() {
         higherNextArrowOpacity();
 
         const allSkyElements = document.getElementsByTagName('a-sky');
-        allSkyElements.remove();
+        for (i = 0; i > allSkyElements.length; i++) {
+            allSkyElements[i].remove();
+        }
         console.log(allSkyElements);
 
         counter += 1;
