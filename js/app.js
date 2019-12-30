@@ -41,7 +41,8 @@ const environmentName = [backgroundImage1Name, backgroundImage2Name, backgroundI
 (function setEnvironmentDescription() {
 
     const environmentName = document.getElementById('currentScene');
-    environmentName.innerText(environmentName[0]);
+    console.log(environmentName[0]);
+    environmentName.textContent = environmentName[0];
    
 })();
 
