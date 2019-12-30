@@ -49,7 +49,7 @@ function changePreviousBackground() {
         const scene = document.getElementById('scene');
         scene.appendChild(background); 
     
-    } else {
+    } else if(counter > 1) {
 
         lowerPreviousArrowOpacity();
 
@@ -78,7 +78,7 @@ function changeNextBackground() {
         const scene = document.getElementById('scene');
         scene.appendChild(background); 
 
-    } else {
+    } else if (counter < (backgroundImages.length - 2)) {
 
         lowerNextArrowOpacity();
 
