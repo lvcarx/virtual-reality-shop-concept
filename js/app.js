@@ -29,7 +29,9 @@ previousBtn.addEventListener('click', changePreviousBackground, false);
 
 function changePreviousBackground() {
 
+
     counter -= 1;
+    console.log(counter);
     const background = document.createElement("a-sky");
     background.setAttribute("id", "sky2"); 
     background.setAttribute("src", backgroundImages[counter]);  
@@ -48,6 +50,7 @@ nextBtn.addEventListener('click', changeNextBackground, false);
 function changeNextBackground() {
 
     counter += 1;
+    console.log(counter);
     console.log('next bg');
     const background = document.getElementById('sky');
     background.setAttribute("id", "sky2"); 
