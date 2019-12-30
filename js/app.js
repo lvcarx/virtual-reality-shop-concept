@@ -29,11 +29,12 @@ let counter = 0;
 
 // change to previous background image
 
+// TODO: Delete unnecessary "sky" elements when changing
+
 const previousBtn = document.getElementById('previousBtn');
 previousBtn.addEventListener('click', changePreviousBackground, false);
 
 function changePreviousBackground() {
-
 
     counter -= 1;
     console.log(counter);
@@ -48,6 +49,8 @@ function changePreviousBackground() {
 }
 
 // change to next background image
+
+// TODO: Delete unnecessary "sky" elements when changing
 
 const nextBtn = document.getElementById('nextBtn');
 nextBtn.addEventListener('click', changeNextBackground, false);
