@@ -12,6 +12,15 @@ const backgroundImage3 = 'https://cdn.glitch.com/96478797-c429-47dc-a2a6-e886b05
 const backgroundImages = [backgroundImage1, backgroundImage2, backgroundImage3, backgroundImage2];
 let counter = 0;
 
+// array for containing scene names
+
+const backgroundImage1Name = 'Environment1';
+const backgroundImage2Name = 'Environment2';
+const backgroundImage3Name = 'Environment3';
+
+const environmentName = [backgroundImage1Name, backgroundImage2Name, backgroundImage3Name, backgroundImage2Name];
+
+
 // set background image
 
 (function setBackground() {
@@ -24,6 +33,15 @@ let counter = 0;
 
     const scene = document.getElementById('scene');
     scene.appendChild(background);
+   
+})();
+
+// set environment description
+
+(function setEnvironmentDescription() {
+
+    const environmentName = document.getElementById('currentScene');
+    environmentName.innerText(environmentName[0]);
    
 })();
 

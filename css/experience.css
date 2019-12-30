@@ -74,6 +74,12 @@
 
 }
 
+.bottomControls .previous, .bottomControls .next {
+
+    cursor: pointer;
+
+}
+
 .bottomControls .previous.lowerOpacity, .bottomControls .next.lowerOpacity {
 
     opacity: 0.5;
