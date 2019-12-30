@@ -2,7 +2,7 @@ function goBack() {
     window.history.back();
 }
 
-// array for background images
+// array containing background images
 
 const backgroundImage1 = 'https://cdn.glitch.com/96478797-c429-47dc-a2a6-e886b050e1e8%2F49247335772_7b750af39e_k.jpg?v=1577551353699';
 const backgroundImage2 = 'timothy-oldfield-luufnHoChRU-unsplash.jpg';
@@ -29,8 +29,6 @@ let counter = 0;
 
 // change to previous background image
 
-// TODO: Delete unnecessary "sky" elements when changing
-
 const previousBtn = document.getElementById('previousBtn');
 previousBtn.addEventListener('click', changePreviousBackground, false);
 
@@ -39,7 +37,7 @@ function changePreviousBackground() {
     if (counter > 0) {
 
         higherPreviousArrowOpacity();
-
+        higherNextArrowOpacity();
         const allSkyElements = document.getElementsByTagName('a-sky');
 
         for (i = 0; i < allSkyElements.length; i++) {
@@ -67,8 +65,6 @@ function changePreviousBackground() {
 
 // change to next background image
 
-// TODO: Delete unnecessary "sky" elements when changing
-
 const nextBtn = document.getElementById('nextBtn');
 nextBtn.addEventListener('click', changeNextBackground, false);
 
@@ -77,7 +73,7 @@ function changeNextBackground() {
     if (counter < (backgroundImages.length - 1)) {    
 
         higherNextArrowOpacity();
-
+        higherPreviousArrowOpacity();
         const allSkyElements = document.getElementsByTagName('a-sky');
         for (i = 0; i < allSkyElements.length; i++) {
             allSkyElements[i].remove();
