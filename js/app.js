@@ -9,7 +9,7 @@ const backgroundImage2 = 'timothy-oldfield-luufnHoChRU-unsplash.jpg';
 const backgroundImage3 = 'https://cdn.glitch.com/96478797-c429-47dc-a2a6-e886b050e1e8%2F49247335772_7b750af39e_k.jpg?v=1577551353699';
 
 
-const backgroundImages = [backgroundImage1, backgroundImage2, backgroundImage3, backgroundImage1];
+const backgroundImages = [backgroundImage1, backgroundImage2, backgroundImage3, backgroundImage2];
 let counter = 0;
 
 // set background image
