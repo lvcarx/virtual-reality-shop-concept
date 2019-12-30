@@ -73,6 +73,11 @@ function changePreviousBackground() {
         console.log('previous bg3');
         const scene = document.getElementById('scene');
         scene.appendChild(background); 
+
+        // change environmentDescription
+
+        const environmentDescription = document.getElementById('currentScene');
+        environmentDescription.textContent = environmentName[counter];
     
     } else {
 
@@ -107,6 +112,11 @@ function changeNextBackground() {
         background.setAttribute("src", backgroundImages[counter]);  
         const scene = document.getElementById('scene');
         scene.appendChild(background); 
+
+        // change environmentDescription
+
+        const environmentDescription = document.getElementById('currentScene');
+        environmentDescription.textContent = environmentName[counter];
 
     } else {
 
