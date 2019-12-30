@@ -39,6 +39,11 @@ function changePreviousBackground() {
     if (counter > 0) {
 
         higherPreviousArrowOpacity();
+
+        const allSkyElements = document.getElementsByTagName('a-sky');
+
+        console.log(allSkyElements);
+
         counter -= 1;
         console.log(counter);
         const background = document.createElement("a-sky");
@@ -49,7 +54,7 @@ function changePreviousBackground() {
         const scene = document.getElementById('scene');
         scene.appendChild(background); 
     
-    } else if(counter > 1) {
+    } else {
 
         lowerPreviousArrowOpacity();
 
@@ -69,6 +74,11 @@ function changeNextBackground() {
     if (counter < (backgroundImages.length - 1)) {    
 
         higherNextArrowOpacity();
+
+        const allSkyElements = document.getElementsByTagName('a-sky');
+
+        console.log(allSkyElements);
+
         counter += 1;
         console.log(counter);
         console.log('next bg');
@@ -78,7 +88,7 @@ function changeNextBackground() {
         const scene = document.getElementById('scene');
         scene.appendChild(background); 
 
-    } else if (counter < (backgroundImages.length - 2)) {
+    } else {
 
         lowerNextArrowOpacity();
 
