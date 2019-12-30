@@ -57,7 +57,7 @@ function changeNextBackground() {
     counter += 1;
     console.log(counter);
     console.log('next bg');
-    const background = document.getElementById('sky');
+    const background = document.createElement("a-sky");
     background.setAttribute("id", "sky2"); 
     background.setAttribute("src", backgroundImages[counter]);  
     const scene = document.getElementById('scene');
