@@ -38,6 +38,7 @@ function changePreviousBackground() {
 
     if (counter > 0) {
 
+        higherPreviousArrowOpacity();
         counter -= 1;
         console.log(counter);
         const background = document.createElement("a-sky");
@@ -48,6 +49,10 @@ function changePreviousBackground() {
         const scene = document.getElementById('scene');
         scene.appendChild(background); 
     
+    } else {
+
+        lowerPreviousArrowOpacity();
+
     }
 
 }
@@ -63,6 +68,7 @@ function changeNextBackground() {
 
     if (counter < (backgroundImages.length - 1)) {    
 
+        higherNextArrowOpacity();
         counter += 1;
         console.log(counter);
         console.log('next bg');
@@ -72,6 +78,38 @@ function changeNextBackground() {
         const scene = document.getElementById('scene');
         scene.appendChild(background); 
 
-    }    
+    } else {
+
+        lowerNextArrowOpacity();
+
+    }
+
+}
+
+function higherNextArrowOpacity() {
+
+    const nextButton = document.getElementById('nextBtn');
+    nextButton.classList.remove('lowerOpacity');
+
+}
+
+function higherPreviousArrowOpacity() {
+
+    const previousButton = document.getElementById('previousBtn');
+    previousButton.classList.remove('lowerOpacity');
+
+}
+
+function lowerNextArrowOpacity() {
+
+    const nextButton = document.getElementById('nextBtn');
+    nextButton.classList.add('lowerOpacity');
+
+}
+
+function lowerPreviousArrowOpacity() {
+
+    const previousButton = document.getElementById('previousBtn');
+    previousButton.classList.add('lowerOpacity');
 
 }
