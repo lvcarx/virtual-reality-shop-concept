@@ -16,7 +16,7 @@ let counter = 0;
 
 (function setBackground() {
 
-    counter = 1;
+    counter = 0;
     console.log('this runs');
     const background = document.createElement("a-sky");
     background.setAttribute("id", "sky"); 
