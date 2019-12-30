@@ -36,15 +36,19 @@ previousBtn.addEventListener('click', changePreviousBackground, false);
 
 function changePreviousBackground() {
 
-    counter -= 1;
-    console.log(counter);
-    const background = document.createElement("a-sky");
-    background.setAttribute("id", "sky2"); 
-    background.setAttribute("src", backgroundImages[counter]);  
+    if (counter > 0) {
 
-    console.log('previous bg3');
-    const scene = document.getElementById('scene');
-    scene.appendChild(background); 
+        counter -= 1;
+        console.log(counter);
+        const background = document.createElement("a-sky");
+        background.setAttribute("id", "sky2"); 
+        background.setAttribute("src", backgroundImages[counter]);  
+
+        console.log('previous bg3');
+        const scene = document.getElementById('scene');
+        scene.appendChild(background); 
+    
+    }
 
 }
 
@@ -57,13 +61,17 @@ nextBtn.addEventListener('click', changeNextBackground, false);
 
 function changeNextBackground() {
 
-    counter += 1;
-    console.log(counter);
-    console.log('next bg');
-    const background = document.createElement("a-sky");
-    background.setAttribute("id", "sky2"); 
-    background.setAttribute("src", backgroundImages[counter]);  
-    const scene = document.getElementById('scene');
-    scene.appendChild(background); 
+    if (counter < (backgroundImages.length - 1)) {    
+
+        counter += 1;
+        console.log(counter);
+        console.log('next bg');
+        const background = document.createElement("a-sky");
+        background.setAttribute("id", "sky2"); 
+        background.setAttribute("src", backgroundImages[counter]);  
+        const scene = document.getElementById('scene');
+        scene.appendChild(background); 
+
+    }    
 
 }
