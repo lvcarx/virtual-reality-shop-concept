@@ -41,7 +41,7 @@ function changePreviousBackground() {
         higherPreviousArrowOpacity();
 
         const allSkyElements = document.getElementsByTagName('a-sky');
-
+        allSkyElements.remove();
         console.log(allSkyElements);
 
         counter -= 1;
@@ -76,7 +76,7 @@ function changeNextBackground() {
         higherNextArrowOpacity();
 
         const allSkyElements = document.getElementsByTagName('a-sky');
-
+        allSkyElements.remove();
         console.log(allSkyElements);
 
         counter += 1;
