@@ -40,10 +40,10 @@ const environmentName = [backgroundImage1Name, backgroundImage2Name, backgroundI
 
 (function setEnvironmentDescription() {
 
-    const environmentName = document.getElementById('currentScene');
-    console.log(environmentName[0]);
-    environmentName.textContent = environmentName[0];
-   
+    const environmentDescription = document.getElementById('currentScene');
+    environmentDescription.textContent = environmentName[0];
+    console.log(environmentName[1]);
+
 })();
 
 // change to previous background image
