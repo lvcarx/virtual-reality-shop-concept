@@ -74,6 +74,12 @@
 
 }
 
+.bottomControls .previous.lowerOpacity, .bottomControls .next.lowerOpacity {
+
+    opacity: 0.5;
+
+}
+
 /* CLOSE BTN */
 
 .closeBtn {
