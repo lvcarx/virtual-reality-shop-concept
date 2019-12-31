@@ -47,7 +47,7 @@
     </script> 
     
     
-    <a-scene id="scene">
+    <a-scene id="scene" vr-mode-ui="enterVRButton: #myEnterVRButton; enterARButton: #myEnterARButton">
       <a-assets>
         <img id="sky" src="https://cdn.glitch.com/96478797-c429-47dc-a2a6-e886b050e1e8%2F49247335772_7b750af39e_k.jpg?v=1577551353699">
       </a-assets>
@@ -68,7 +68,9 @@
       <a-text value="Hello A-Frame!" position="0 100 0" width="6" color="black"></a-text>
       
       
-      
+    <!-- Style the button with images or whatever. -->
+    <a id="myEnterVRButton" href="#"></a>
+    <a id="myEnterARButton" href="#"></a>
       <!-- Interface -->
       
       <div class="infoSection">VR Mode</div>
