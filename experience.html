@@ -19,7 +19,7 @@
 AFRAME.registerComponent('custom-controls', {
   schema: {
     hand: {default: ''},
-    model: {default: 'scene.gltf'}
+    model: {default: 'firstHand.obj'}
   },
 
   update: function () {
@@ -39,7 +39,7 @@ AFRAME.registerComponent('custom-controls', {
     el.setAttribute('windows-motion-controls', controlConfiguration);
 
     // Set a model.
-    el.setAttribute('gltf-model', this.data.model);
+    el.setAttribute('obj-model', this.data.model);
   }
 });
       
@@ -56,12 +56,12 @@ AFRAME.registerComponent('custom-controls', {
 
       <a-assets>
         <a-asset-item id="handModel" src="firstHand.obj"></a-asset-item>
+      
       </a-assets>
-      <a-assets>
-        <a-asset-item id="handModel2" src="scene.gltf"></a-asset-item>
-      </a-assets>
+   
       <a-obj-model src="#handModel" scale="0.1 0.1 0.1"></a-obj-model>
-      <a-entity gltf-model="#handModel2"></a-entity>
+     
+  
     
      <a-entity daydream-controls="hand: right"></a-entity> 
       
