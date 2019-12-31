@@ -20,7 +20,7 @@
     AFRAME.registerComponent('custom-controls', {
   schema: {
     hand: {default: ''},
-    model: {default: 'customControllerModel.gltf'}
+    model: {default: 'firstHand.obj'}
   },
 
   update: function () {
@@ -28,7 +28,7 @@
     var el = this.el;
     var controlConfiguration = {
       hand: hand,
-      model: false,
+      model: true,
       orientationOffset: {x: 0, y: 0, z: hand === 'left' ? 90 : -90}
     };
 
