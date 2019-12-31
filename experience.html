@@ -16,7 +16,7 @@
   </head>
   <body>
 
-  <!--  <script>
+   <script>
     AFRAME.registerComponent('custom-controls', {
       schema: {
         hand: {default: ''},
@@ -44,7 +44,7 @@
       }
     });  
       
-    </script> -->
+    </script> 
     
     
     <a-scene id="scene">
@@ -62,6 +62,7 @@
 
     
       <a-entity daydream-controls="hand: right; model: #handModel"></a-entity> 
+      <a-entity custom-controls></a-entity> 
       <!-- <a-sky src="#sky"></a-sky> -->
       
       <a-text value="Hello A-Frame!" position="0 100 0" width="6" color="black"></a-text>
