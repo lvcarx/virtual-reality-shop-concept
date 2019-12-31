@@ -26,7 +26,12 @@
       <a-assets>
         <a-asset-item id="handModel" src="img/firstHand.obj"></a-asset-item>
       </a-assets>
-      <a-entity obj-model="#handModel" scale="0.01 0.01 0.01"></a-entity>
+      <a-entity obj-model="#handModel" scale="0.01 0.01 0.01" modify-materials></a-entity>
+
+      <a-assets>
+        <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="#cityModel" play-all-model-animations modify-materials></a-entity>
 
       <!-- <a-sky src="#sky"></a-sky> -->
       
