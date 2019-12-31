@@ -61,7 +61,7 @@ AFRAME.registerComponent('custom-controls', {
         <a-asset-item id="handModel2" src="scene.gltf"></a-asset-item>
       </a-assets>
       <a-obj-model src="#handModel" scale="0.1 0.1 0.1"></a-obj-model>
-      <a-gltf-model src="#handModel2" scale="0.1 0.1 0.1"></a-gltf-model>
+      <a-entity gltf-model="#handModel2"></a-entity>
     
      <a-entity daydream-controls="hand: right"></a-entity> 
       
