@@ -29,7 +29,7 @@
     var controlConfiguration = {
       hand: hand,
       model: true,
-      orientationOffset: {x: 0, y: 0, z: hand === 'left' ? 90 : -90}
+      orientationOffset: {x: 0, y: 0, z: 0}
     };
 
     // Build on top of controller components.
@@ -62,7 +62,7 @@
 
     
       <!-- <a-entity daydream-controls="hand: right; model: #handModel"></a-entity> -->
-      <a-entity custom-controls></a-entity> 
+      <a-entity custom-controls="hand: right"></a-entity> 
       <!-- <a-sky src="#sky"></a-sky> -->
       
       <a-text value="Hello A-Frame!" position="0 100 0" width="6" color="black"></a-text>
