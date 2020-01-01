@@ -73,7 +73,7 @@
     <a-entity class="cube" mixin="cube" position="-1 1.6 -1" material="color: blue"></a-entity>
     <a-entity class="cube" mixin="cube" position="0.9 1 -0.9" material="color: green"></a-entity>
     <!-- <a-entity class="cube" mixin="cube" position="1 1.6 -1" material="color: green"></a-entity> -->
-    <a-entity obj-model="obj: #handModel;" scale="0.4 0.4 0.4" position="1 1.6 -1" dynamic-body="shape: box; mass: 2" hoverable grabbable stretchable draggable droppable
+    <a-entity obj-model="obj: #handModel;" scale="0.4 0.4 0.4" position="1 1.6 -1" static-body="shape: box;" hoverable grabbable stretchable draggable droppable
     shadow
     event-set__dragdrop="_event: drag-drop; geometry.radius: 0.25; geometry.primitive: sphere"
     event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true"
