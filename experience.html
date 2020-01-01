@@ -23,7 +23,7 @@
     <script>AFRAME.registerComponent('custom-controls', {
       schema: {
         hand: {default: ''},
-        model: {default: 'firstHand.obj'}
+        model: {default: 'scene.obj'}
       },
     
       update: function () {
@@ -43,7 +43,7 @@
         el.setAttribute('windows-motion-controls', controlConfiguration);
     
         // Set a model.
-        el.setAttribute('obj-model', this.data.model);
+        el.setAttribute('gltf-model', this.data.model);
       }
     });</script>
 
