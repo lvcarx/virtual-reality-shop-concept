@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
     <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
-
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
 
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/super-hands@3.0.0/dist/super-hands.min.js"></script>
@@ -73,7 +73,7 @@
     <a-entity class="cube" mixin="cube" position="-1 1.6 -1" material="color: blue"></a-entity>
     <a-entity class="cube" mixin="cube" position="0.9 1 -0.9" material="color: green"></a-entity>
     <!-- <a-entity class="cube" mixin="cube" position="1 1.6 -1" material="color: green"></a-entity> -->
-    <a-entity obj-model="obj: #handModel;" scale="0.4 0.4 0.4" position="1 1.6 -1" geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5" hoverable grabbable stretchable draggable droppable
+    <a-entity obj-model="obj: #handModel;" scale="0.4 0.4 0.4" position="1 1.6 -1" dynamic-body="shape: box; mass: 2" hoverable grabbable stretchable draggable droppable
     shadow
     event-set__dragdrop="_event: drag-drop; geometry.radius: 0.25; geometry.primitive: sphere"
     event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true"
