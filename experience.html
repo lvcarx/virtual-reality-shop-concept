@@ -31,7 +31,7 @@
         var el = this.el;
         var controlConfiguration = {
           hand: hand,
-          model: true,
+          model: false,
           orientationOffset: {x: 0, y: 0, z: hand === 'left' ? 90 : -90}
         };
     
@@ -56,11 +56,11 @@
    
       <a-obj-model src="#handModel" scale="0.1 0.1 0.1" hoverable grabbable stretchable draggable droppable></a-obj-model>
      
-  
+      <a-entity custom-controls="hand: right"></a-entity> 
     
-     <a-entity custom-controls="hand: right; model: firstHand.obj"></a-entity> 
+     
      <a-assets>
-     <!--  <img id="portal-preview" src="../assets/physics.jpg"></img>
+     <!-- <img id="portal-preview" src="../assets/physics.jpg"></img>
       <a-mixin id="pointer" raycaster="showLine: true; objects: .cube, a-link"
                 super-hands="colliderEvent: raycaster-intersection;
                              colliderEventProperty: els;
@@ -97,7 +97,7 @@
     <a-entity class="cube" mixin="cube" position="0 1.6 -1.5" material="color: red"></a-entity>
     <a-entity class="cube" mixin="cube" position="-0.9 1 -0.9" material="color: blue"></a-entity>
     <a-entity class="cube" mixin="cube" position="-1 1.6 -1" material="color: blue"></a-entity>
-    <a-entity class="cube" mixin="cube" position="0.9 1 -0.9" material="color: green"></a-entity> -->
+    <a-entity class="cube" mixin="cube" position="0.9 1 -0.9" material="color: green"></a-entity> --> 
     <!-- <a-entity class="cube" mixin="cube" position="1 1.6 -1" material="color: green"></a-entity> -->
     <a-entity obj-model="obj: #handModel;" scale="0.4 0.4 0.4" position="1 1.6 -1" dynamic-body="shape: box; mass: 1; boxRadius: 10" hoverable grabbable stretchable draggable droppable
     shadow></a-entity>
