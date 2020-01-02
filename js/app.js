@@ -4,21 +4,25 @@ function goBack() {
 
 // array containing background images
 
-const backgroundImage1 = 'https://cdn.glitch.com/96478797-c429-47dc-a2a6-e886b050e1e8%2F49247335772_7b750af39e_k.jpg?v=1577551353699';
-const backgroundImage2 = 'timothy-oldfield-luufnHoChRU-unsplash.jpg';
-const backgroundImage3 = 'https://cdn.glitch.com/96478797-c429-47dc-a2a6-e886b050e1e8%2F49247335772_7b750af39e_k.jpg?v=1577551353699';
+const backgroundImage1 = 'img/backgroundImages/vr-image-city-bridge.jpg';
+const backgroundImage2 = 'img/backgroundImages/vr-image-coast.jpg';
+const backgroundImage3 = 'img/backgroundImages/vr-image-cobblestones.jpg';
+const backgroundImage4 = 'img/backgroundImages/vr-image-snowy-mountain.jpg';
+const backgroundImage5 = 'img/backgroundImages/vr-image-snowy-mountain(2).jpg';
 
 
-const backgroundImages = [backgroundImage1, backgroundImage2, backgroundImage3, backgroundImage2];
+const backgroundImages = [backgroundImage1, backgroundImage2, backgroundImage3, backgroundImage4, backgroundImage5];
 let counter = 0;
 
 // array for containing scene names
 
-const backgroundImage1Name = 'Environment1';
-const backgroundImage2Name = 'Environment2';
-const backgroundImage3Name = 'Environment3';
+const backgroundImage1Name = 'Bridge';
+const backgroundImage2Name = 'Coast';
+const backgroundImage3Name = 'City';
+const backgroundImage4Name = 'Snowy Mountain at sunset';
+const backgroundImage5Name = 'Snowy Mountain at night';
 
-const environmentName = [backgroundImage1Name, backgroundImage2Name, backgroundImage3Name, backgroundImage2Name];
+const environmentName = [backgroundImage1Name, backgroundImage2Name, backgroundImage3Name, backgroundImage4Name, backgroundImage5Name];
 
 
 // set background image
