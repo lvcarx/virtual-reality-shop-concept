@@ -1,3 +1,9 @@
+h1::before {
+
+    display: none;
+
+}
+
 .content {
 
     text-align: center;
@@ -16,5 +22,17 @@
 
     display: inline-block;
     margin-top: 30px;
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+    
+
+    .content p {
+
+        width: 85%;
+    
+    }    
 
 }
