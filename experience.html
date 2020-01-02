@@ -23,7 +23,7 @@
 
 
     <a-scene id="scene" physics="gravity: 0;">
-      <a-entity custom-controls="hand: right"></a-entity> 
+      
 
       <a-assets>
         <a-asset-item id="handModel" src="firstHand.obj"></a-asset-item>
@@ -32,12 +32,7 @@
  
      
      <a-assets>
-      
-   <!--  <a-mixin id="pointer" raycaster="showLine: true; objects: .cube, a-link"
-                super-hands="colliderEvent: raycaster-intersection;
-                             colliderEventProperty: els;
-                             colliderEndEvent:raycaster-intersection-cleared;
-                             colliderEndEventProperty: clearedEls;"> --> 
+    
       </a-mixin>
       <a-mixin id="controller-right" mixin="pointer"
                vive-controls="hand: right" oculus-touch-controls="hand: right"
@@ -46,9 +41,10 @@
       </a-mixin>
      
     </a-assets>
-    <a-entity>
-        <a-entity id="rhand" mixin="controller-right" static-body></a-entity>
-    </a-entity>
+   <!-- <a-entity> 
+        <a-entity id="rhand2" mixin="controller-right" static-body></a-entity>-->
+        <a-entity id="rhand" daydream-controls="hand: right;" static-body></a-entity>
+    <!-- </a-entity> -->
     
     <a-entity obj-model="obj: #handModel;" constraint="target: #rhand;" scale="0.4 0.4 0.4" position="0 0 -2" dynamic-body="shape: box; mass: 1; boxRadius: 1" hoverable grabbable stretchable draggable droppable
     shadow></a-entity>
