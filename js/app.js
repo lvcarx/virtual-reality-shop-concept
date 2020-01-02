@@ -6,7 +6,7 @@ function goBack() {
 
 const backgroundImage1 = 'img/backgroundImages/vr-image-city-bridge.jpg';
 const backgroundImage2 = 'img/backgroundImages/vr-image-coast.jpg';
-const backgroundImage3 = 'img/backgroundImages/vr-image-cobblestones.jpg';
+const backgroundImage3 = 'img/backgroundImages/vr-image-cafe.jpg';
 const backgroundImage4 = 'img/backgroundImages/vr-image-snowy-mountain.jpg';
 const backgroundImage5 = 'img/backgroundImages/vr-image-snowy-mountain(2).jpg';
 
@@ -18,7 +18,7 @@ let counter = 0;
 
 const backgroundImage1Name = 'Bridge';
 const backgroundImage2Name = 'Coast';
-const backgroundImage3Name = 'City';
+const backgroundImage3Name = 'Cafe';
 const backgroundImage4Name = 'Snowy Mountain at sunset';
 const backgroundImage5Name = 'Snowy Mountain at night';
 
