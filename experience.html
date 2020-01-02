@@ -19,38 +19,16 @@
     <link href="css/experience.css" rel="stylesheet">
   </head>
   <body>
- 
-
-
-    <a-scene id="scene" physics="gravity: 0;">
-      
-
+   <a-scene id="scene" physics="gravity: 0;">
       <a-assets>
         <a-asset-item id="handModel" src="firstHand.obj"></a-asset-item>
       </a-assets>
-   
- 
-     
-     <a-assets>
-    
-      </a-mixin>
-      <a-mixin id="controller-right" mixin="pointer"
-               vive-controls="hand: right" oculus-touch-controls="hand: right"
-               windows-motion-controls="hand: right"
-               gearvr-controls daydream-controls="hand: right;" oculus-go-controls >
-      </a-mixin>
-     
-    </a-assets>
-   <!-- <a-entity> 
-        <a-entity id="rhand2" mixin="controller-right" static-body></a-entity>-->
-        <a-entity id="rhand" daydream-controls="hand: right;" static-body></a-entity>
-    <!-- </a-entity> -->
-    
-    <a-entity obj-model="obj: #handModel;" constraint="target: #rhand;" scale="0.4 0.4 0.4" position="0 0 -2" dynamic-body="shape: box; mass: 1; boxRadius: 1" hoverable grabbable stretchable draggable droppable
-    shadow></a-entity>
-   
-   
       
+      <a-entity id="rhand" daydream-controls="hand: right;" static-body></a-entity>
+      <a-entity obj-model="obj: #handModel;" constraint="target: #rhand;" scale="0.4 0.4 0.4" position="0 0 -2" dynamic-body="shape: box; mass: 1; boxRadius: 1" hoverable grabbable stretchable draggable droppable
+      shadow></a-entity>
+   
+   
   
       <!-- Interface -->
       
@@ -64,7 +42,7 @@
         <button class="next button" id="nextBtn"><img src="img/next.svg"></button>
       </div>
 
-    </a-scene>
+   </a-scene>
   </body>
 </html>
 
