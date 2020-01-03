@@ -181,4 +181,6 @@ function activateSound() {
     const soundElement = document.getElementById("s2");
     soundElement.setAttribute("volume", "0");  
 
+    entity.components.sound.pauseSound();
+
 }
