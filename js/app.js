@@ -174,7 +174,10 @@ function lowerPreviousArrowOpacity() {
 
 }
 
+// sound control
 
+function activateSound() {
 
+    
 
-
+}
