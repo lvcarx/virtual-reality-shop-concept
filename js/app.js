@@ -1,3 +1,5 @@
+// function for closing the vr experience
+
 function goBack() {
     window.history.back();
 }
@@ -14,7 +16,8 @@ const backgroundImage5 = 'img/backgroundImages/vr-image-snowy-mountain(2).jpg';
 const backgroundImages = [backgroundImage1, backgroundImage2, backgroundImage3, backgroundImage4, backgroundImage5];
 let counter = 0;
 
-// array for containing scene names
+
+// array containing scene names
 
 const backgroundImage1Name = 'Bridge';
 const backgroundImage2Name = 'Coast';
@@ -25,12 +28,11 @@ const backgroundImage5Name = 'Snowy Mountain at night';
 const environmentName = [backgroundImage1Name, backgroundImage2Name, backgroundImage3Name, backgroundImage4Name, backgroundImage5Name];
 
 
-// set background image
+// this function sets background image
 
 (function setBackground() {
 
     counter = 0;
-    console.log('this runs');
     const background = document.createElement("a-sky");
     background.setAttribute("id", "sky"); 
     background.setAttribute("src", backgroundImages[0]);  
@@ -40,7 +42,7 @@ const environmentName = [backgroundImage1Name, backgroundImage2Name, backgroundI
    
 })();
 
-// set environment description
+// this function sets environment description
 
 (function setEnvironmentDescription() {
 
@@ -50,7 +52,7 @@ const environmentName = [backgroundImage1Name, backgroundImage2Name, backgroundI
 
 })();
 
-// change to previous background image
+// change to previous (in the array) background image
 
 const previousBtn = document.getElementById('previousBtn');
 previousBtn.addEventListener('click', changePreviousBackground, false);
@@ -66,15 +68,12 @@ function changePreviousBackground() {
         for (i = 0; i < allSkyElements.length; i++) {
             allSkyElements[i].remove();
         }
-            console.log(allSkyElements);
 
         counter -= 1;
-        console.log(counter);
         const background = document.createElement("a-sky");
         background.setAttribute("id", "sky2"); 
         background.setAttribute("src", backgroundImages[counter]);  
 
-        console.log('previous bg3');
         const scene = document.getElementById('scene');
         scene.appendChild(background); 
 
@@ -91,7 +90,7 @@ function changePreviousBackground() {
 
 }
 
-// change to next background image
+// change to next (in the array) background image
 
 const nextBtn = document.getElementById('nextBtn');
 nextBtn.addEventListener('click', changeNextBackground, false);
@@ -106,11 +105,11 @@ function changeNextBackground() {
         for (i = 0; i < allSkyElements.length; i++) {
             allSkyElements[i].remove();
         }
-        console.log(allSkyElements);
 
+
+
+        // iterating counter one step
         counter += 1;
-        console.log(counter);
-        console.log('next bg');
         const background = document.createElement("a-sky");
         background.setAttribute("id", "sky2"); 
         background.setAttribute("src", backgroundImages[counter]);  
@@ -130,12 +129,16 @@ function changeNextBackground() {
 
 }
 
+// higher the opacity of next button 
+
 function higherNextArrowOpacity() {
 
     const nextButton = document.getElementById('nextBtn');
     nextButton.classList.remove('lowerOpacity');
 
 }
+
+// higher the opacity of previous button 
 
 function higherPreviousArrowOpacity() {
 
@@ -144,12 +147,16 @@ function higherPreviousArrowOpacity() {
 
 }
 
+// lower the opacity of next button 
+
 function lowerNextArrowOpacity() {
 
     const nextButton = document.getElementById('nextBtn');
     nextButton.classList.add('lowerOpacity');
 
 }
+
+// lower the opacity of previous button 
 
 function lowerPreviousArrowOpacity() {
 
@@ -160,7 +167,5 @@ function lowerPreviousArrowOpacity() {
 
 
 
-
-//
 
 
