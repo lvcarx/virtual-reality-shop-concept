@@ -178,13 +178,7 @@ function lowerPreviousArrowOpacity() {
 
 function activateSound() {
 
-    const soundElement = document.createElement("a-entity");
-   
-    soundElement.setAttribute("id", "sound");  
-    soundElement.setAttribute("sound", "src: sounds/starling.mp3");  
-    soundElement.setAttribute("autoplay", "true");  
-    soundElement.setAttribute("preload", "auto");  
-    const scene = document.getElementById('scene');
-    scene.appendChild(soundElement); 
+    const soundElement = document.getElementById("sound");
+    soundElement.setAttribute("volume", "0");  
 
 }
