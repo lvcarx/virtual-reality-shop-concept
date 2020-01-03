@@ -179,8 +179,9 @@ function lowerPreviousArrowOpacity() {
 function activateSound() {
 
     const soundElement = document.createElement("a-entity");
-    soundElement.setAttribute("sound", "sounds/starling.mp3");  
+   
     soundElement.setAttribute("id", "sound");  
+    soundElement.setAttribute("sound", "sounds/starling.mp3");  
     soundElement.setAttribute("autoplay", "true");  
     soundElement.setAttribute("preload", "auto");  
     const scene = document.getElementById('scene');
