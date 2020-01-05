@@ -146,6 +146,24 @@
 
 }
 
+.noSoundBtn {
+
+    position: absolute;
+    display: block;    
+    top: 20px;
+    left: 180px;
+    background: rgba(0,0,0,0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    z-index: 999;
+    color: #fff;
+    background-size: cover;
+
+}
+
 button {
 
 

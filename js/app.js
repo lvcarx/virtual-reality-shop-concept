@@ -176,9 +176,16 @@ function lowerPreviousArrowOpacity() {
 
 // sound control
 
+function activateSound() {
+
+    const sounds = document.getElementById('s2');
+    sounds.components.sound.playSound();
+
+}
+
 function deactivateSound() {
 
-    const sound = document.getElementById('s2');
-    sound.components.sound.pauseSound();
+    const sounds = document.getElementById('s2');
+    sounds.components.sound.pauseSound();
 
 }
