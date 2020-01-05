@@ -186,6 +186,7 @@ function activateSound() {
 function deactivateSound() {
 
     const sounds = document.getElementById('s2');
-    sounds.components.sound.pauseSound();
+    sounds.components.sound.stopSound();
+    console.log('workd');
 
 }
