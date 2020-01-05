@@ -135,7 +135,7 @@
 
 }
 
-.soundBtn img {
+.soundBtn img, .noSoundBtn img {
 
     display: block;
     width: 22px;
