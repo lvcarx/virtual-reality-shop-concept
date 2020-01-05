@@ -176,11 +176,9 @@ function lowerPreviousArrowOpacity() {
 
 // sound control
 
-function activateSound() {
+function deactivateSound() {
 
- 
-    
-    var entity = document.querySelector('[sound]');
-    entity.components.sound.pauseSound();
+    const sound = document.getElementById('s2');
+    sound.components.sound.pauseSound();
 
 }
