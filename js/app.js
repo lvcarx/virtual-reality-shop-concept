@@ -129,7 +129,7 @@ function changeNextBackground() {
         const environmentDescription = document.getElementById('currentScene');
         environmentDescription.textContent = environmentName[counter];
 
-    } if else(counter = (backgroundImages.length - 1)) {
+    } else if (counter = (backgroundImages.length - 1)) {
 
         // lowering next arrow opacity
         lowerNextArrowOpacity();
