@@ -9,8 +9,8 @@ function goBack() {
 const backgroundImage1 = 'img/backgroundImages/vr-image-city-bridge.jpg';
 const backgroundImage2 = 'img/backgroundImages/vr-image-coast.jpg';
 const backgroundImage3 = 'img/backgroundImages/vr-image-cafe.jpg';
-const backgroundImage4 = 'img/backgroundImages/vr-image-snowy-mountain.jpg';
-const backgroundImage5 = 'img/backgroundImages/vr-image-snowy-mountain(2).jpg';
+const backgroundImage4 = 'img/backgroundImages/vr-image-snowy-mountain(2).jpg';
+const backgroundImage5 = 'img/backgroundImages/vr-image-snowy-mountain.jpg';
 
 // array containing background images
 const backgroundImages = [backgroundImage1, backgroundImage2, backgroundImage3, backgroundImage4, backgroundImage5];
@@ -129,7 +129,7 @@ function changeNextBackground() {
         const environmentDescription = document.getElementById('currentScene');
         environmentDescription.textContent = environmentName[counter];
 
-    } else {
+    } if else(counter = (backgroundImages.length - 1)) {
 
         // lowering next arrow opacity
         lowerNextArrowOpacity();
