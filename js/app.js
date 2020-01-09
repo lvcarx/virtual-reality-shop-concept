@@ -6,11 +6,11 @@ function goBack() {
 
 
 
-const backgroundImage1 = 'img/backgroundImages/vr-image-city-bridge.jpg';
-const backgroundImage2 = 'img/backgroundImages/vr-image-coast.jpg';
-const backgroundImage3 = 'img/backgroundImages/vr-image-cafe.jpg';
-const backgroundImage4 = 'img/backgroundImages/vr-image-snowy-mountain(2).jpg';
-const backgroundImage5 = 'img/backgroundImages/vr-image-snowy-mountain.jpg';
+const backgroundImage1 = 'img/backgroundImages/beach.jpg';
+const backgroundImage2 = 'img/backgroundImages/bridge.jpg';
+const backgroundImage3 = 'img/backgroundImages/carrousel.jpg';
+const backgroundImage4 = 'img/backgroundImages/lake.jpg';
+const backgroundImage5 = 'img/backgroundImages/miami.jpg';
 
 // array containing background images
 const backgroundImages = [backgroundImage1, backgroundImage2, backgroundImage3, backgroundImage4, backgroundImage5];
@@ -19,11 +19,11 @@ const backgroundImages = [backgroundImage1, backgroundImage2, backgroundImage3, 
 let counter = 0;
 
 
-const backgroundImage1Name = 'Bridge';
-const backgroundImage2Name = 'Coast';
-const backgroundImage3Name = 'Cafe';
-const backgroundImage4Name = 'Snowy Mountain at sunset';
-const backgroundImage5Name = 'Snowy Mountain at night';
+const backgroundImage1Name = 'Beach';
+const backgroundImage2Name = 'Bridge';
+const backgroundImage3Name = 'Carrousel';
+const backgroundImage4Name = 'Lake';
+const backgroundImage5Name = 'Miami';
 
 // array containing scene names
 const environmentName = [backgroundImage1Name, backgroundImage2Name, backgroundImage3Name, backgroundImage4Name, backgroundImage5Name];
