@@ -8,7 +8,15 @@
 .leftSide {
 
     width: 40%;
+    display: block;
     float: left;
+
+}
+
+.leftSide img {
+
+    display: block;
+    width: 100%;
 
 }
 
