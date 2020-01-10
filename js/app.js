@@ -19,11 +19,11 @@ const backgroundImages = [backgroundImage1, backgroundImage2, backgroundImage3, 
 let counter = 0;
 
 
-const backgroundImage1Name = 'Beach';
-const backgroundImage2Name = 'Bridge';
-const backgroundImage3Name = 'Carrousel';
-const backgroundImage4Name = 'Lake';
-const backgroundImage5Name = 'Miami';
+const backgroundImage1Name = 'Beach - Music: Starling by Podington Bear';
+const backgroundImage2Name = 'Bridge - Music: Starling by Podington Bear';
+const backgroundImage3Name = 'Carrousel - Music: Starling by Podington Bear';
+const backgroundImage4Name = 'Lake - Music: Starling by Podington Bear';
+const backgroundImage5Name = 'Miami - Music: Starling by Podington Bear';
 
 // array containing scene names
 const environmentName = [backgroundImage1Name, backgroundImage2Name, backgroundImage3Name, backgroundImage4Name, backgroundImage5Name];
